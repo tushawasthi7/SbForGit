@@ -10,11 +10,15 @@ import org.springframework.web.bind.annotation.RestController;
 public class UserController {
 
 
-@GetMapping("/addJobs")
-public String addJobs() {
-	return "employer/addJobs";
+@GetMapping("/greet")
+public String greet() {
+	return "Welcome to Git";
 }
 
+@GetMapping("Change")
+public String OneRecord() {
+	return "New Job";
+}
 
 
 }
